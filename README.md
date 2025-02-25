@@ -1,6 +1,6 @@
 # Teiamei
 
-**TODO: Add description**
+**TODO: A useful chat**
 
 ## Installation
 
