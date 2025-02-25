@@ -17,7 +17,6 @@ defmodule Teiamei.ServerRegistry do
 
   @impl true
   def handle_call({:create, room_name}, {pid, _}, state) do
-    Logger.info("from: #{inspect pid} |||| self: #{inspect self()}")
     case Teiamei.Server.start_link({room_name, [pid]}) do
       {:ok, _} ->
         Logger.info("Server created")
